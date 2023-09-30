@@ -5,7 +5,7 @@
         var produtoRepository = new ProdutoRepository();
 
         // Adicionar um produto
-        produtoRepository.Adicionar(new Produto { Nome = "Produto 1", Preco = 19.99m });
+        produtoRepository.Adicionar(new Produto { Nome = "Produto 1", Preco = 14.99m });
 
         // Obter todos os produtos
         var produtos = produtoRepository.ObterTodos();
@@ -21,7 +21,7 @@
         if (produtoParaAtualizar != null)
         {
             produtoParaAtualizar.Nome = "Produto Atualizado";
-            produtoParaAtualizar.Preco = 29.99m;
+            produtoParaAtualizar.Preco = 19.29m;
             produtoRepository.Atualizar(produtoParaAtualizar);
             Console.WriteLine("Produto atualizado.");
         }
